@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TO Do App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body onload="showtask()">
+<div class="wrapper">
+    <h1 class="main-heading"> WORK TO-DOS</h1>
+    <h3 class="sub-heading">
+        <span class="add">Enter items to add to list</span><br>
+        <span class="complete">Click the item to mark complete</span><br>
+        <span class="delete">Click '&times;' to remove from list</span>
+    </h3>
+    <div class="add-task">
+        <input type="text" id="text-box" class="text-box" onblur="addTask()">
+        <button type="button" class="add-button" onclick="addTask()">&#43;</button>
+    </div>
+
+<br><br>
+    <div id="list"></div>
+</div>
+<script src="todo.js"></script>
+</body>
+</html>
